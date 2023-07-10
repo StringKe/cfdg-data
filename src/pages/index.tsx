@@ -224,7 +224,15 @@ export default function Home() {
                         {!isSCodeVerify ? '验证密钥' : '验证完成'}
                     </Button>
 
-                    {hasAlliance && <Button onClick={() => step2GetAllianceInfo()}>获取联盟数据</Button>}
+                    {hasAlliance && (
+                        <Button
+                            onClick={() => {
+                                void step2GetAllianceInfo()
+                            }}
+                        >
+                            获取联盟数据
+                        </Button>
+                    )}
 
                     <Stack>
                         {isSCodeVerify && userInfo && (

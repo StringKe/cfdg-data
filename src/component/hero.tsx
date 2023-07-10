@@ -8,7 +8,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     name: {
-        fontFamily: `Greycliff CF, ${theme?.fontFamily}`,
+        fontFamily: `Greycliff CF, ${theme.fontFamily || ''}`,
     },
 }))
 

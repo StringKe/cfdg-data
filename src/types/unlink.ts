@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export interface UnlinkResponse<T> {
     iRet: number
     sMsg: string
